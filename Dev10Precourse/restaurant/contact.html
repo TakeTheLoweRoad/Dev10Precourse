@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+  Name: Samantha Lowe
+  Date created: 01/27/20
+  Most recent revision:
+-->
+
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Good Plates</h1>
+      <hr />
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <hr />
+    </nav>
+
+    <form action="submit.html" method="POST">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name"> <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email"> <br />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone"> <br />
+
+      <label for="reason">Reason for Inquiry:</label>
+      <select id="reason" name="reason">
+        <option value="default" selected>Catering</option>
+        <option value="privateParty">Private Party</option>
+        <option value ="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select><br />
+
+      <label for="info">Additional Information:</label>
+      <textarea id="info" name="info"></textarea><br />
+
+
+      <legend>Have you been to the restaurant?</legend>
+      <input type="radio" id="choice1" name="beenBefore" value="yes">
+      <label for="choice1">Yes</label>
+      <input type="radio" id="choice2" name="beenBefore" value="no">
+      <label for="choice2">No</label>
+      <br />
+
+      <legend>Best days to contact you:</legend>
+      <input type="checkbox" id="monday" name="day" value="monday">
+      <label for="monday">M</label>
+      <input type="checkbox" id="tuesday" name="day" value="tuesday">
+      <label for="tuesday">T</label>
+      <input type="checkbox" id="wednesday" name="day" value="wednesday">
+      <label for="wednesday">W</label>
+      <input type="checkbox" id="thursday" name="day" value="thursday">
+      <label for="thursday">Th</label>
+      <input type="checkbox" id="friday" name="day" value="friday">
+      <label for="friday">F</label>
+      <br />
+
+      <input type="submit" name="submit" value="Submit Request">
+
+    </form>
+
+    <footer>
+      <hr />
+      <p>The Good Place, The Afterlife</p>
+      <p>867-5309</p>
+    </footer>
+
+  </body>
+
+</html>
