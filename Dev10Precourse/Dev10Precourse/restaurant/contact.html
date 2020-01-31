@@ -8,121 +8,47 @@
 <html lang="en">
   <head>
     <title>Contact Us</title>
-    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-    <style>
-      body {
-        background-color: cornflowerblue;
-      }
-
-      label, fieldset {
-        font-size: 1.1em;
-      }
-
-      fieldset {
-        background-color: #fef9ff;
-        width: 100%;
-        padding: 12px 20px;
-        margin: 12px 0;
-        box-sizing: border-box;
-      }
-
-      select, textarea {
-        margin: 12px 0;
-        font-size: 1em;
-      }
-
-      input[type=submit]{
-        font-size: 1.2em;
-        background-color: #546a7b;
-        color: #fef9ff;
-        padding: 4px 8px;
-        margin-bottom: 15px;
-      }
-
-      input[type=submit]:hover {
-          background-color: #f2eded;
-          color: #546a7b;
-      }
-
-      textarea {
-          width: 100%;
-          height: 200px;
-          padding: 12px 20px;
-          margin: 12px 0;
-          box-sizing: border-box;
-          border: 2px solid #0d1f2d;
-          border-radius: 3px;
-          background-color: #fff;
-          resize: none;
-      }
-
-
-
-    /*  .right-content {
-        float:left;
-      }*/
-
-      article {
-        margin-bottom: 16px;
-      }
-
-      .required {
-        font-weight: bold;
-      }
-
-      p {
-        color: #fef9ff;
-        font-weight: bold;
-      }
-
-    </style>
-
-  </head>
   </head>
   <body>
     <header>
       <h1>The Good Plates</h1>
+      <hr />
     </header>
 
     <nav>
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
       <a href="contact.html">Contact Us</a>
-      <div class="clear-float"></div>
+      <hr />
     </nav>
 
     <form action="submit.html" method="POST">
-      <p>Required input in bold.</p>
-      <div class="required">
+
       <label for="name">Name:</label>
-      <input type="text" id="name"> <br /><br />
-      </div>
-      <div class="required">
+      <input type="text" id="name"> <br />
       <label for="email">Email:</label>
-      <input type="text" id="email"> <br /><br />
-      </div>
+      <input type="text" id="email"> <br />
       <label for="phone">Phone:</label>
-      <input type="text" id="phone"> <br /><br />
-      <div class="required">
+      <input type="text" id="phone"> <br />
+
       <label for="reason">Reason for Inquiry:</label>
       <select id="reason" name="reason">
         <option value="default" selected>Catering</option>
         <option value="privateParty">Private Party</option>
         <option value ="feedback">Feedback</option>
         <option value="other">Other</option>
-      </select><br /><br />
-      </div>
-      <div class="required">
+      </select><br />
+
       <label for="info">Additional Information:</label>
-      <textarea id="info" name="info"></textarea><br /><br />
-      </div>
+      <textarea id="info" name="info"></textarea><br />
+
 
       <legend>Have you been to the restaurant?</legend>
       <input type="radio" id="choice1" name="beenBefore" value="yes">
       <label for="choice1">Yes</label>
       <input type="radio" id="choice2" name="beenBefore" value="no">
       <label for="choice2">No</label>
-      <br /><br />
+      <br />
 
       <legend>Best days to contact you:</legend>
       <input type="checkbox" id="monday" name="day" value="monday">
@@ -135,13 +61,14 @@
       <label for="thursday">Th</label>
       <input type="checkbox" id="friday" name="day" value="friday">
       <label for="friday">F</label>
-      <br /><br />
+      <br />
 
       <input type="submit" name="submit" value="Submit Request">
 
     </form>
 
     <footer>
+      <hr />
       <p>The Good Place, The Afterlife</p>
       <p>867-5309</p>
     </footer>

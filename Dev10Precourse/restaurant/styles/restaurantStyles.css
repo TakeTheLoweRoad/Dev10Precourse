@@ -1,0 +1,63 @@
+/*
+Samantha Lowe
+Date created: 01/29/20
+Date last modified:
+*/
+
+header, footer {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav {
+  border-top: 3px solid #546a7b;
+  border-bottom: 3px solid #546a7b;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87;
+    font-weight: bold;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: gold;
+}
+
+.clear-float {
+    clear:both;
+}
+
+body {
+  background-color: gold;/*#fef9ff;*/
+  font-family: ariel, helvetica, sans-serif;
+  color: #0d1f2d;
+  max-width: 900px;
+  margin: 0 auto;
+}
