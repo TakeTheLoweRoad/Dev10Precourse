@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Evens</title>
+    <script type="text/JavaScript" src="displayEvens2.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Second Attempt at Display Evens</h1>
+
+    <form name="numberFun"
+      onsubmit="return validateItems();"
+      onreset="resetForm();" class="form-inline">
+        <div class="form-group">
+            <label for="start">Starting Number:</label>
+            <input type="number" class="form-control" id="start">
+        </div><br />
+        <div class="form-group">
+            <label for="end">Ending Number:</label>
+            <input type="number" class="form-control" id="end">
+        </div><br />
+        <div class="form-group">
+            <label for="step">Step Number: </label>
+            <input type="number" class="form-control" id="step">
+        </div><br />
+        <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+        <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+
+    <span id="paragraph" style="display:none;"></span>
+    <!--
+    <table id="results" class="table table-striped" style="display:none;">
+        <thead>
+             <tr>
+                 <th>Operation</th>
+                 <th>Result</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>Addition (+)</td>
+                 <td><span id="addResult"></span></td>
+             </tr>
+             <tr>
+                 <td>Subtraction (-)</td>
+                 <td><span id="subtractResult"></span></td>
+             </tr>
+             <tr>
+                 <td>Multiplication (*)</td>
+                 <td><span id="multiplyResult"></span></td>
+             </tr>
+             <tr>
+                 <td>Division (/)</td>
+                 <td><span id="divideResult"></span></td>
+             </tr>
+         </tbody>
+       </table>
+     -->
+
+</div>
+</body>
+</html>
