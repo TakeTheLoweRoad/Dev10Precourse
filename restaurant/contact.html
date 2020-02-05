@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+  Name: Samantha Lowe
+  Date created: 01/27/20
+  Most recent revision:
+-->
+
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      body {
+        background-color: cornflowerblue;
+      }
+
+      label, fieldset {
+        font-size: 1.1em;
+      }
+
+      fieldset {
+        background-color: #fef9ff;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+      }
+
+      select, textarea {
+        margin: 12px 0;
+        font-size: 1em;
+      }
+
+      input[type=submit]{
+        font-size: 1.2em;
+        background-color: #546a7b;
+        color: #fef9ff;
+        padding: 4px 8px;
+        margin-bottom: 15px;
+      }
+
+      input[type=submit]:hover {
+          background-color: #f2eded;
+          color: #546a7b;
+      }
+
+      textarea {
+          width: 100%;
+          height: 200px;
+          padding: 12px 20px;
+          margin: 12px 0;
+          box-sizing: border-box;
+          border: 2px solid #0d1f2d;
+          border-radius: 3px;
+          background-color: #fff;
+          resize: none;
+      }
+
+
+
+    /*  .right-content {
+        float:left;
+      }*/
+
+      article {
+        margin-bottom: 16px;
+      }
+
+      p {
+        color: #fef9ff;
+        /*font-weight: bold;*/
+      }
+
+      p, label {
+        font-weight: normal;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>The Good Plates</h1>
+    </header>
+
+    <br />
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p class="text-center">Welcome! Everything is fine.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">We're opening a new location.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">We're rolling out a seasonal menu, with special options this Jeremy Bearimy.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">The drink of the Bearimy is SG Special Brew.</p>
+    </div>
+    </div>
+    </div>
+
+    <nav>
+
+      <!--
+      <a href="index.html"><span class="glyphicon glyphicon-home" /></a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <div class="clear-float"></div>
+    -->
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <noscript>
+      <h3 style="color: red;">Note: this site would work better if you enabled JavaScript!</h3>
+    </noscript>
+
+    <form onsubmit="validateForm();" id="contactForm" method="POST">
+          <p>Required input is in <strong>bold.</strong></p>
+
+          <label for="name"><strong>Name:</strong></label>
+          <input type="text" id="name" required/> <br /><br />
+
+          <label for="email"><strong>Email:</strong></label>
+          <input type="text" id="email" required/> <br /><br />
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone"> <br /><br />
+
+          <label for="reason">Reason for Inquiry:</label>
+          <select id="reason" name="reason">
+            <option value="default" selected>Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value ="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select><br /><br />
+
+          <label for="info"><strong>Additional Information:</strong></label>
+          <textarea id="info" name="info" required/></textarea><br /><br />
+
+          <legend>Have you been to the restaurant?</legend>
+          <input type="radio" id="choice1" name="beenBefore" value="yes">
+          <label for="choice1">Yes</label>
+          <input type="radio" id="choice2" name="beenBefore" value="no">
+          <label for="choice2">No</label>
+          <br /><br />
+
+          <legend>Best days to contact you:</legend>
+          <input type="checkbox" id="monday" name="day" value="monday">
+          <label for="monday">M</label>
+          <input type="checkbox" id="tuesday" name="day" value="tuesday">
+          <label for="tuesday">T</label>
+          <input type="checkbox" id="wednesday" name="day" value="wednesday">
+          <label for="wednesday">W</label>
+          <input type="checkbox" id="thursday" name="day" value="thursday">
+          <label for="thursday">Th</label>
+          <input type="checkbox" id="friday" name="day" value="friday">
+          <label for="friday">F</label>
+          <br /><br />
+
+          <input type="submit" name="submit" value="Submit Request">
+
+        </form>
+
+        <footer>
+          <p>The Good Place, The Afterlife</p>
+          <p>867-5309</p>
+        </footer>
+
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+
+        function validateForm() {
+              alert("Thank you, your form is valid and we will get back to you soon! Take it sleazy.");
+              return false;
+            }
+
+        </script>
+
+      </body>
+</html>

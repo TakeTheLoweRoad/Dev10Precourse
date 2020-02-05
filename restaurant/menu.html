@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+  Name: Samantha Lowe
+  Date created: 01/28/20
+  Most recent revision:
+-->
+
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      body {
+        background-color: coral;
+      }
+      strong {
+        font-size: 1.3em;
+      }
+
+      caption{
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+
+      table, th, td {
+        /*border: 1px solid black;*/
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+
+      table {
+        width: 70%;
+        margin: auto;
+      }
+
+      tr {
+        height: 30px;
+      }
+
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #e4c3ad;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The Good Plates</h1>
+    </header>
+
+    <br />
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p class="text-center">Welcome! Everything is fine.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">We're opening a new location.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">We're rolling out a seasonal menu, with special options this Jeremy Bearimy.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="text-center">The drink of the Bearimy is SG Special Brew.</p>
+    </div>
+    </div>
+    </div>
+
+    <nav>
+      <!--
+      <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <div class="clear-float"></div>
+    -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" href="menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    </nav>
+
+    <noscript>
+      <h3 style="color: red;">Note: this site would work better if you enabled JavaScript!</h3>
+    </noscript>
+
+    <div class="row">
+      <div class="col-lg-4">
+          <p><strong>Chidi's Favorite Meal</strong><br />His grandma's recipe: fish in peanut sauce<br /> $20</p>
+      </div>
+      <div class="col-lg-4">
+           <p><strong>Jianyu's Favorite Meal</strong><br />A block of tofu<br /> $10</p>
+      </div>
+      <div class="col-lg-4">
+           <p><strong>Jason's Favorite Meal</strong><br />Spicy wings from Stupid Nick's Wing Dump in Gainesville<br /> $5</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+          <p><strong>Eleanor's Favorite Meal</strong><br />Nothing<br /> $100</p>
+      </div>
+      <div class="col-lg-4">
+           <p><strong>Fake Eleanor's Favorite Meal</strong><br />Shrimp Cocktail Fountain <br /> $25</p>
+      </div>
+      <div class="col-lg-4">
+           <p><strong style="font-size: 1.3em;">Tahani's Favorite Meal</strong><br />All-Knowing Burrito<br /> $12</p>
+      </div>
+    </div>
+
+    <!--
+    <p><strong>Chidi's Favorite Meal</strong><br />His grandma's recipe: fish in peanut sauce<br /> $10</p>
+    <p><strong>Jianyu's Favorite Meal</strong><br />A block of tofu<br /> $10</p>
+    <p><strong>Jason's Favorite Meal</strong><br />Spicy wings from Stupid Nick's Wing Dump in Gainesville<br /> <strong>$10</strong></p>
+    <p><strong>Eleanor's Favorite Meal</strong><br />Nothing<br /> $10</p>
+    <p><strong>Fake Eleanor's Favorite Meal</strong><br />Shrimp Cocktail Fountain <br /> $10</p>
+    <p><strong style="font-size: 1.3em;">Tahani's Favorite Meal</strong><br /> “While you re-pair the universe, I shall pre-pare the eggs!”<br /> $10</p>
+  -->
+
+    <table>
+      <!--<caption>Beverages</caption>-->
+      <thead>
+        <tr>
+          <th>Beverages</th>
+          <th></th>
+          <th></th>
+        </tr>
+      <tbody>
+      </thead>
+        <tr>
+          <td>Coffee with Almond Milk</td>
+          <td>    </td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Lonely Gal Margarita Mix (For One)</td>
+          <td></td>
+          <td>$7.00</td>
+        </tr>
+        <tr>
+          <td>Double Trouble (Energy Drink and Body Spray)</td>
+          <td></td>
+          <td>$300.00</td>
+        </tr>
+        <tr>
+          <td>Antimatter</td>
+          <td></td>
+          <td>$4.50</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <footer>
+      <p>The Good Place, The Afterlife</p>
+      <p>867-5309</p>
+    </footer>
+  </body>
+
+</html>
